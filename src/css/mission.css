@@ -1,20 +1,11 @@
-.mission-section {
-  background: #5e8a4d;
+#mission {
+    background: #5e8a4d;
 }
 
 .mission-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 32px;
-  padding: 64px 16px;
-}
-@media only screen and (min-width: 768px) {
-  .mission-container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 @media only screen and (min-width: 1440px) {
   .mission-container {
@@ -23,11 +14,9 @@
   }
 }
 .mission-lead-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 @media only screen and (min-width: 768px) {
   .mission-lead-container {
@@ -54,7 +43,6 @@
   }
 }
 .mission-title {
-  color: #fff;
 }
 @media only screen and (min-width: 1440px) {
   .mission-title {
