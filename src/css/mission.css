@@ -1,14 +1,14 @@
 .mission-section {
-    background: #5e8a4d;
+  background: #5e8a4d;
 }
 
 .mission-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 32px;
-    padding: 64px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  padding: 64px 16px;
 }
 @media only screen and (min-width: 768px) {
   .mission-container {
@@ -23,11 +23,11 @@
   }
 }
 .mission-lead-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
 }
 @media only screen and (min-width: 768px) {
   .mission-lead-container {
@@ -41,8 +41,8 @@
   }
 }
 .mission-title-container {
-
 }
+
 @media only screen and (min-width: 768px) {
   .mission-title-container {
     max-width: 340px;
@@ -54,7 +54,7 @@
   }
 }
 .mission-title {
-    color: #fff;
+  color: #fff;
 }
 @media only screen and (min-width: 1440px) {
   .mission-title {
@@ -62,7 +62,6 @@
   }
 }
 .mission-text-container {
-
 }
 @media only screen and (min-width: 768px) {
   .mission-text-container {
@@ -75,24 +74,24 @@
   }
 }
 .mission-text {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .mission-image {
-    width: 343px;
-    height: 192px;
+  width: 343px;
+  height: 192px;
 }
 
 @media screen and (min-width: 768px) {
-    .mission-image {
-        width: 704px;
-        height: 396px;
-    }
+  .mission-image {
+    width: 704px;
+    height: 396px;
+  }
 }
- 
+
 @media screen and (min-width: 1440px) {
-    .mission-image {
-        width: 1312px;
-        height: 738px;
-    }
+  .mission-image {
+    width: 1312px;
+    height: 738px;
+  }
 }
