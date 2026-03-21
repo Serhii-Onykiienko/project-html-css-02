@@ -1,6 +1,4 @@
 .container {
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 .hero {
@@ -9,10 +7,18 @@
   min-height: 630px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/hero/hero-mob.jpg);
+    url(/img/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 375px 630px;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/img/hero/hero-mob@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -21,9 +27,18 @@
     padding-bottom: 234px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-tab.jpg);
+      url(/img/hero/hero-tab.jpg);
 
     background-size: 768px 630px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/img/hero/hero-tab@2x.jpg);
   }
 }
 
@@ -34,9 +49,18 @@
     min-height: 900px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-dt.jpg);
+      url(/img/hero/hero-dt.jpg);
 
     background-size: 1440px 900px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/img/hero/hero-dt@2x.jpg);
   }
 }
 
@@ -81,6 +105,16 @@
   padding: 6px 32px;
   min-width: 100%;
   height: 40px;
+
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  background-color: #5e8a4d;
+  border-color: #5e8a4d;
 }
 
 @media only screen and (min-width: 768px) {
