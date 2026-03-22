@@ -7,7 +7,7 @@
   min-height: 630px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(src/img/hero/hero-mob.jpg);
+    url(/img/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 375px 630px;
@@ -17,7 +17,7 @@
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(src/img/hero/hero-mob@2x.jpg);
+      url(/img/hero/hero-mob@2x.jpg);
   }
 }
 
@@ -27,7 +27,7 @@
     padding-bottom: 234px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(src/img/hero/hero-tab.jpg);
+      url(/img/hero/hero-tab.jpg);
 
     background-size: 768px 630px;
   }
@@ -38,7 +38,7 @@
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(src/img/hero/hero-tab@2x.jpg);
+      url(/img/hero/hero-tab@2x.jpg);
   }
 }
 
@@ -49,7 +49,7 @@
     min-height: 900px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(src/img/hero/hero-dt.jpg);
+      url(/img/hero/hero-dt.jpg);
 
     background-size: 1440px 900px;
   }
@@ -60,7 +60,7 @@
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(src/img/hero/hero-dt@2x.jpg);
+      url(/img/hero/hero-dt@2x.jpg);
   }
 }
 
