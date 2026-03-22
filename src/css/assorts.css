@@ -21,7 +21,6 @@
 .assorts-heading {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
   max-width: 344px;
@@ -42,10 +41,15 @@
 
 .assorts-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .assorts-list {
+    flex-direction: row; 
+    flex-wrap: wrap;     
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -56,8 +60,6 @@
 
 .assorts-item {
   display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
   width: 100%;
@@ -78,7 +80,6 @@
 .assorts-content {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: space-between;
   gap: 16px;
 }
@@ -113,8 +114,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 4px 10px;
