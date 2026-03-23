@@ -1,53 +1,57 @@
 <section class="contacts section" id="contacts">
   <div class="container">
-    <div>
-      <span class="subtitle">Contacts</span>
-      <h2 class="title">Get in Toush</h2>
-      <p class="title-text">We'd love to hear from you anytime!</p>
-    </div>
     <div class="contacts-content">
-      <div class="contacts-methods">
-        <div class="method-item">
-          <a href="mailto:hello@organicstore.com" class="contact-link">
-            <svg class="contact-icon" width="20" height="16">
-              <use href="../img/sprite.svg#icon-mail"></use>
-            </svg>
-            <span>hello@organicstore.com</span>
-          </a>
+      <div class="contacts-left-side">
+        <div class="contacts-header">
+          <span class="subtitle">Contacts</span>
+          <h2 class="title">Get in Toush</h2>
+          <p class="title-text">We'd love to hear from you anytime!</p>
         </div>
-        <div class="method-item">
-          <a href="tel:+15553291024" class="contact-link">
-            <svg class="contact-icon" width="20" height="16">
-              <use href="../img/sprite.svg#icon-phone"></use>
-            </svg>
-            <span>+1 (555) 329-1024</span>
-          </a>
+        <div class="contacts-methods">
+          <div class="method-item">
+            <a href="mailto:hello@organicstore.com" class="contact-link">
+              <svg class="contact-icon" width="20" height="16">
+                <use href="../img/sprite.svg#icon-mail"></use>
+              </svg>
+              <span>hello@organicstore.com</span>
+            </a>
+          </div>
+          <div class="method-item">
+            <a href="tel:+15553291024" class="contact-link">
+              <svg class="contact-icon" width="20" height="16">
+                <use href="../img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>+1 (555) 329-1024</span>
+            </a>
+          </div>
         </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Sarah" required />
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="hello@organic.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Type your message..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
       </div>
-
-      <form class="contact-form">
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" placeholder="Sarah" required />
-        </div>
-
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="hello@organic.com" required />
-        </div>
-
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Type your message..."></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Submit</button>
-        <div class="form-image-wrapper">
-          <img class="contact-form-icon"
-           src="../img/contacts/contacts-mob.jpg" alt="friendli team" >
-        </div>
-        </div>
-      </form>
+      <div class="form-image-wrapper">
+        <img
+          class="contact-form-icon"
+          src="../img/contacts/contacts-mob.jpg"
+          alt="friendli team"
+        />
+      </div>
     </div>
-  
+  </div>
 </section>

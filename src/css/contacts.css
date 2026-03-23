@@ -5,7 +5,8 @@
     
 }
 
-/* Заголовки */
+
+
 .subtitle {
     display: block;
     color: #010400;
@@ -30,19 +31,28 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    
+    margin-bottom: 32px;
 }
 
 .contacts-content {
     display: flex;
     flex-direction: column;
-    /* Вибудовує елементи в колонку */
+   
     align-items: flex-start;
-    /* Центрує текст і форму по горизонталі (якщо потрібно) */
+    width: 100%;
     gap: 32px;
-    /* Відступ між текстом/контактами та формою */
+    
     margin-top: 40px;
 }
+
+.contacts-left-side,
+.form-image-wrapper {
+    width: 100%;
+}
+
+
+
+
 .method-item:last-child .contact-link {
     margin-bottom: 0;
 }
@@ -51,9 +61,9 @@
 .form-group:first-child label {
     margin-top: 0;
 }
-/* Контактні дані */
+
 .contacts-methods {
-    flex: 1;
+    flex: none;
 }
 
 .method-item {
@@ -75,20 +85,15 @@
     color: #7EB12D;
 }
 
-/* Стилізація форми */
+
 .contact-form {
-    flex: 1.5;
-    display: block;
-    /* Змінюємо на 1fr, щоб була лише одна колонка */
-    grid-template-columns: 1fr;
-    gap: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Видаляємо span, щоб Message не розтягувався через дві колонки (яких уже немає) */
-.form-group:nth-child(3),
-.submit-btn {
-    grid-column: auto;
-}
+
+
 
 .form-group label {
     display: block;
@@ -121,21 +126,30 @@
     resize: none;
 }
 
-/* Кнопка */
+
 .submit-btn {
     background: #1a5901;
     color: #fff;
-    grid-column: span 2;
+    width: 100%;
     padding: 6px 12px;
     border-radius: 6px;
     border: 1px solid #1a5901;
     cursor: pointer;
     height: 40px;
-    width: 100%;
+    
     margin-bottom: 32px;
     margin-top: 24px;
-    /* Кнопка по контенту */
+   
 }
+
+@media screen and (min-width: 768px) {
+    .submit-btn {
+        width: 343px;
+        height: 36px;
+    }
+}
+
+
 
 .submit-btn:hover {
     background-color: #1a5901;
@@ -156,3 +170,63 @@
     display: block;
     object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+    .contact-form-icon {
+        width: 100%;
+        height: 637px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .contacts-content {
+        flex-direction: row;
+        align-items: stretch;
+        height: 757px;
+        gap: 80px;
+        margin-top: 0;
+    }
+
+    .contacts-left-side {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 757px;
+    }
+        .contacts-header {
+            width: 644px;
+           
+            height: 149px;
+            margin-bottom: 0;
+            
+        }
+
+    .contacts-methods {
+        margin-top: auto;
+                    
+        margin-bottom: 24px;
+ }
+
+    .form-image-wrapper {
+        flex: 1;
+        
+        height: 757px;
+        
+    }
+
+    .contact-form-icon {
+         width: 100%;
+         height: 757px;
+        object-fit: cover;
+     }
+    
+
+    .submit-btn {
+        border: 1px solid #1a5901;
+            border-radius: 6px;
+            padding: 6px 12px;
+            width: 198px;
+            height: 36px;
+}
+ }
