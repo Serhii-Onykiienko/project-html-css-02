@@ -2,11 +2,12 @@
   background-color: #1a5901;
 }
 
+.benefits-img {
+  margin-bottom: 24px;
+}
+
 .benefits-title {
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  padding: 24px 0;
+  margin-bottom: 24px;
 }
 
 .benefits-text {
@@ -20,7 +21,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 8px 0;
   gap: 32px;
 }
 
@@ -69,7 +69,7 @@
 @media only screen and (min-width: 1440px) {
   .benefits-wrap {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
   }
 
@@ -80,6 +80,7 @@
   .benefits-img {
     width: 100%;
     height: auto;
+    margin-bottom: 0;
   }
 
   .benefits-list {
