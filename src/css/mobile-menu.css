@@ -68,6 +68,14 @@ button {
 /* Кнопка закриття — робимо іконку БІЛОЮ */
 .mobile-menu-close-icon {
   fill: #ffffff; /* Чітко білий колір */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Ховер на КНОПКУ, який змінює ІКОНКУ всередині */
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon {
+  fill: #1a5901; /* Темно-зелений колір при наведенні */
+  transform: rotate(90deg); /* Легке прокручування для ефекту */
 }
 
 /* --- ПЛАНШЕТНА ВЕРСІЯ (768px+) --- */
