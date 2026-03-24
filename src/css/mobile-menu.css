@@ -130,7 +130,14 @@ button {
     color: #ffffff;
     border-radius: 6px;
     font-weight: 600;
+    transition: background-color 250ms ease, color 250ms ease;
   }
+}
+.mobile-menu-order-btn:hover,
+.mobile-menu-order-btn:focus {
+  background-color: #ffffff;
+  color: #1a5901;
+  border: 1px solid #1a5901; /* Додай бордер, щоб кнопка не "зникала" на білому фоні */
 }
 
 @media screen and (min-width: 768px) {
