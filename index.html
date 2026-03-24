@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,15 +18,92 @@
       href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/project-html-css-02/assets/index-CKOBFt_C.css">
+    <script type="module" crossorigin src="/project-html-css-02/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/project-html-css-02/assets/index-CMQ-lirO.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container"></div>
+    <header class="header-section" id="home">
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html">
+      <img class="logo-img" src="/project-html-css-02/assets/logo-group-z-8pqpC9.svg" alt="Organic Shop" />
+    </a>
+
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mission">Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#assorts">Assorts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#assorts" class="order-link">Order</a>
+
+      <button class="burger-btn js-open-menu" type="button">
+        <svg class="burger-icon" width="44" height="44">
+          <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
 
-    <div class="mobile-menu">
-  <div class="mobile-menu__panel"></div>
+    <div class="mobile-menu-wrapper js-menu-container" id="mobile-menu">
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-header">
+      <a class="mobile-menu-logo" href="./index.html">
+        <img class="logo-img" src="/project-html-css-02/assets/logo-group-z-8pqpC9.svg" alt="Organic Shop" />
+      </a>
+
+      <button class="mobile-menu-close-btn js-close-menu" type="button">
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- nt -->
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-link">
+          <a href="#home" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#mission" class="mobile-nav-link">Mission</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#benefits" class="mobile-nav-link">Benefits</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#assorts" class="mobile-nav-link">Assorts</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#feedbacks" class="mobile-nav-link">Feedbacks</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#faq" class="mobile-nav-link">FAQ</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="#contacts" class="mobile-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#assorts" class="mobile-menu-order-btn">Order</a>
+  </div>
 </div>
 
 
@@ -125,7 +202,7 @@
           <li class="benefits-item">
             <div class="benefits-item-icon">
               <svg class="benefits-icon" width="48" height="48">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-health"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-health"></use>
               </svg>
             </div>
             <h3 class="benefits-item-title">Better for Your Health</h3>
@@ -138,7 +215,7 @@
           <li class="benefits-item">
             <div class="benefits-item-icon">
               <svg class="benefits-icon" width="48" height="48">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-basketball"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-basketball"></use>
               </svg>
             </div>
             <h3 class="benefits-item-title">Protecting the Planet</h3>
@@ -151,7 +228,7 @@
           <li class="benefits-item">
             <div class="benefits-item-icon">
               <svg class="benefits-icon" width="48" height="48">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-restaurant"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-restaurant"></use>
               </svg>
             </div>
             <h3 class="benefits-item-title">Fruits & Vegetables</h3>
@@ -163,7 +240,7 @@
           <li class="benefits-item">
             <div class="benefits-item-icon">
               <svg class="benefits-icon" width="48" height="48">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-cheese"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-cheese"></use>
               </svg>
             </div>
             <h3 class="benefits-item-title">Dairy Products</h3>
@@ -402,27 +479,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
           <svg class="feedbacks-icon-star" width="20" height="19">
-            <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
           </svg>
             </li>
             <li>
           <svg class="feedbacks-icon-star" width="20" height="19">
-            <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
           </svg>
             </li>
             <li>
           <svg class="feedbacks-icon-star" width="20" height="19">
-            <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
           </svg>
             </li>
             <li>
           <svg class="feedbacks-icon-star" width="20" height="19">
-            <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
           </svg>
             </li>
             <li>
           <svg class="feedbacks-icon-star" width="20" height="19">
-            <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
           </svg>
             </li>
           </ul>
@@ -440,27 +517,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
           </ul>
@@ -477,27 +554,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -513,27 +590,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
           </ul>
@@ -549,27 +626,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -586,27 +663,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -622,27 +699,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -658,27 +735,27 @@
           <ul class="feedbacks-ul-icons">
             <li class="feedbacks-icon-li">
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star-black"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star-black"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
             <li>
               <svg class="feedbacks-icon-star" width="20" height="19">
-                <use href="/project-html-css-02/assets/sprite-DnywfJ5Q.svg#icon-star"></use>
+                <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -695,7 +772,91 @@
 </section>
 
       <section class="faq section" id="faq">
-  <div class="container"></div>
+  <div class="container faq-container">
+   
+    <div class="faq-left">
+    <h2 class="faq-title">FAQs</h2> 
+  <p class="faq-text">
+    Here are some common questions about our organic products and services.
+    </p>
+  </div>
+
+    <ul class="faq-list">
+     
+      <li class="faq-item">
+      <div class="faq-top">
+        <h3 class="faq-question">Are all products organic?</h3>
+      <svg class="faq-icon" width="32" height="32">
+        <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-up"></use>
+      </svg>
+      </div>
+    <p class="faq-answer">
+      Yes, all our products are certified organic. We prioritize quality and sustainability in our sourcing. You can trust
+      that everything you buy from us meets strict organic standards.
+    </p>
+      </li>
+
+      <li class="faq-item">
+        <div class="faq-top">
+          <h3 class="faq-question">Where do you source?</h3>
+        <svg class="faq-icon" width="32" height="32">
+          <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-up"></use>
+        </svg>
+        </div>
+        
+        <p class="faq-answer">
+          We source our products from local farmers and trusted suppliers. This ensures freshness and supports our community. Our
+          commitment is to ethical and sustainable practices.
+        </p>
+      </li>
+      
+        <li class="faq-item">
+          <div class="faq-top">
+            <h3 class="faq-question">What areas do you deliver?</h3>
+            <svg class="faq-icon" width="32" height="32">
+              <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-up"></use>
+            </svg>
+          </div>
+          <p class="faq-answer">
+          We currently deliver to several neighborhoods in the region. Check our delivery area on the website for specifics. If
+          you're unsure, feel free to reach out!
+          </p>
+        </li>
+
+      <li class="faq-item">
+        <div class="faq-top">
+          <h3 class="faq-question">Do you offer subscriptions?</h3>
+          <svg class="faq-icon" width="32" height="32">
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-up"></use>
+          </svg>
+        </div>
+        
+        <p class="faq-answer">
+        Yes, we offer subscription plans for regular deliveries. This is a convenient way to ensure you never run out of your
+        favorite organic products. You can customize your subscription based on your needs.
+        </p>
+      </li>
+      
+      
+
+      <li class="faq-item">
+        <div class="faq-top">
+          <h3 class="faq-question">How can I contact?</h3>
+          <svg class="faq-icon" width="32" height="32">
+            <use href="/project-html-css-02/assets/sprite-DhH320a2.svg#icon-up"></use>
+          </svg>
+        </div>
+        
+        <p class="faq-answer">
+        You can reach us via phone or email for any inquiries. Our customer service team is here to help. We aim to respond to
+        all questions promptly.
+        </p>
+      </li>
+      
+
+    </ul>
+
+  </div>
 </section>
 
       <section class="contacts section" id="contacts">
@@ -709,6 +870,5 @@
 </footer>
 
 
-    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
