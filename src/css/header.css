@@ -1,0 +1,177 @@
+/* #region Common */
+button {
+  border: none;
+  background-color: transparent;
+}
+/* .container {
+  /* дебаг-код (рамка) */
+/* outline: 2px solid orange;
+  outline-offset: -2px;
+} */
+*/
+/* кінець коммонів */
+/* сам хедер */
+.header-section {
+  background-color: #5e8a4d;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* min-height: 60px; accept comment */
+  padding: 6px 16px;
+}
+.header-nav {
+  display: none;
+}
+.logo-img {
+  display: block;
+  width: 142px; /* Розмір з Figma */
+  height: 60px;
+  /* object-fit: contain; accept comment*/
+}
+.order-link {
+  display: none;
+  padding: 16px 0; /* добавляю зверху знизу паднг для збільшення клікабельної області */
+}
+/* Контейнер для правої частини */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* відступ між кнопкою і бургером */
+}
+/* Бургер кнопка */
+.burger-btn {
+  width: 44px;
+  height: 44px;
+
+  display: flex; /* центрує SVG іконку всередині кнопки */
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* щоб іконка не "тікала" від країв */
+  line-height: 0; /* прибирає фантомні відступи знизу */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-icon {
+  height: 32px;
+  width: 32px;
+  fill: #fff;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    /* box-sizing: border-box; */
+    /* width: 100%;
+    max-width: 768px; */
+
+    /*    
+    margin-left: auto;
+    margin-right: auto; */
+
+    padding: 6px 32px;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+  }
+  .burger-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .order-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 4px;
+    padding-inline: 24px;
+
+    width: 92px;
+    height: 32px;
+    box-sizing: border-box;
+
+    background-color: #1a5901;
+    color: #ffffff;
+    border: 1px solid #1a5901;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* padding-block: 4px; */
+  /* padding-inline: 24px; */
+
+  .order-link:hover,
+  .order-link:focus {
+    background-color: #fff; /* Білий фон */
+    color: #010400;
+    border-color: #ffffff;
+  }
+  .header-actions {
+    display: flex;
+    align-items: center; /* Центрує кнопку 32px по вертикалі відносно іконки 44px */
+    gap: 16px;
+  }
+}
+
+/* --- ДЕСКТОП (1440px+) --- */
+@media screen and (min-width: 1440px) {
+  .header-container {
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 6px 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  /* Навігація */
+  .header-nav {
+    display: block;
+    /* Зміщуємо меню ближче до правої частини */
+    margin-left: auto;
+    margin-right: 44px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    /* list-style: none;
+    margin: 0; */
+    /* padding: 16px 0; добавляю зверху знизу паднг для збільшення клікабельної області */
+  }
+
+  .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 16px 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    opacity: 0.5;
+  }
+
+  /* Ховаємо бургер, він тут не потрібен */
+  .burger-btn {
+    display: none;
+  }
+}
