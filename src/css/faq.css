@@ -10,6 +10,9 @@
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+}
+
+.faq-left{
     margin-bottom: 16px;
 }
 
@@ -22,6 +25,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 24px;
     padding-top: 22px;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .faq-top {
