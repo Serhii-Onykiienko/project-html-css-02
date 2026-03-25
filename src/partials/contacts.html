@@ -1,122 +1,110 @@
 <section class="contacts section" id="contacts">
-  <div class="container">
-    <div class="contacts-content">
-      <div class="contacts-left-side">
-        <div class="contacts-header">
-          <p class="contacts-subtitle">Contacts</p>
-          <h2 class="contacts-title">Get in Touch</h2>
-          <p class="contacts-title-text">We'd love to hear from you anytime!</p>
+  <div class="container contacts-content">
+    <div class="contacts-left-side">
+      <div class="contacts-header">
+        <h3 class="contacts-subtitle">Contacts</h3>
+        <h2 class="contacts-title">Get in Touch</h2>
+        <p class="contacts-title-text">We'd love to hear from you anytime!</p>
+      </div>
+
+      <ul class="contacts-methods">
+        <li class="method-item">
+          <a href="mailto:hello@organicstore.com" class="contact-link">
+            <svg class="contact-icon" width="24" height="24" aria-hidden="true">
+              <use href="/img/sprite.svg#icon-mail"></use>
+            </svg>
+            <span>hello@organicstore.com</span>
+          </a>
+        </li>
+
+        <li class="method-item">
+          <a href="tel:+15553291024" class="contact-link">
+            <svg class="contact-icon" width="24" height="24" aria-hidden="true">
+              <use href="/img/sprite.svg#icon-phone"></use>
+            </svg>
+            <span>+1 (555) 329-1024</span>
+          </a>
+        </li>
+      </ul>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label class="form-label" for="user-name">Name</label>
+          <input
+            class="form-input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            placeholder="Sarah"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            title="Name must contain 5 to 64 characters: letters, spaces, or dots only."
+          />
         </div>
 
-        <ul class="contacts-methods">
-          <li class="method-item">
-            <a href="mailto:hello@organicstore.com" class="contact-link">
-              <svg
-                class="contact-icon"
-                width="24"
-                height="24"
-                aria-hidden="true"
-              >
-                <use href="/img/sprite.svg#icon-mail"></use>
-              </svg>
-              <span>hello@organicstore.com</span>
-            </a>
-          </li>
-
-          <li class="method-item">
-            <a href="tel:+15553291024" class="contact-link">
-              <svg
-                class="contact-icon"
-                width="24"
-                height="24"
-                aria-hidden="true"
-              >
-                <use href="/img/sprite.svg#icon-phone"></use>
-              </svg>
-              <span>+1 (555) 329-1024</span>
-            </a>
-          </li>
-        </ul>
-
-        <form class="contact-form">
-          <div class="form-group">
-            <label class="form-label" for="user-name">Name</label>
-            <input
-              class="form-input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              placeholder="Sarah"
-              required
-              pattern="^[a-zA-Z\s\.]{5,64}$"
-              title="Name must contain 5 to 64 characters: letters, spaces, or dots only."
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="user-email">Email</label>
-            <input
-              class="form-input"
-              id="user-email"
-              name="user-email"
-              type="email"
-              placeholder="hello@organic.com"
-              required
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              title="Enter a valid email address."
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="label-textarea" for="user-message">Message</label>
-            <textarea
-              class="form-textarea"
-              id="user-message"
-              name="message"
-              placeholder="Type your message..."
-              required
-              minlength="10"
-              maxlength="500"
-              title="Error text"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-      </div>
-
-      <div class="form-image-wrapper">
-        <picture>
-          <source
-            media="(min-width: 1440px)"
-            srcset="
-              /img/contacts/contacts-dt.jpg,
-              /img/contacts/contacts-dt@2x.jpg 2x
-            "
-            type="image/jpeg"
+        <div class="form-group">
+          <label class="form-label" for="user-email">Email</label>
+          <input
+            class="form-input"
+            id="user-email"
+            name="user-email"
+            type="email"
+            placeholder="hello@organic.com"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Enter a valid email address."
           />
+        </div>
 
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              /img/contacts/contacts-tab.jpg,
-              /img/contacts/contacts-tab@2x.jpg 2x
-            "
-            type="image/jpeg"
-          />
+        <div class="form-group">
+          <label class="label-textarea" for="user-message">Message</label>
+          <textarea
+            class="form-textarea"
+            id="user-message"
+            name="message"
+            placeholder="Type your message..."
+            required
+            minlength="10"
+            maxlength="500"
+            title="Error text"
+          ></textarea>
+        </div>
 
-          <img
-            class="contact-form-image"
-            src="/img/contacts/contacts-mob.jpg"
-            srcset="/img/contacts/contacts-mob@2x.jpg 2x"
-            alt="Friendly team"
-            width="343"
-            height="343"
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
-      </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="form-image-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/contacts/contacts-dt.jpg,
+            /img/contacts/contacts-dt@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contacts/contacts-tab.jpg,
+            /img/contacts/contacts-tab@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+
+        <img
+          class="contact-form-image"
+          src="/img/contacts/contacts-mob.jpg"
+          srcset="/img/contacts/contacts-mob@2x.jpg 2x"
+          alt="Friendly team"
+          width="343"
+          height="343"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
     </div>
   </div>
 </section>
