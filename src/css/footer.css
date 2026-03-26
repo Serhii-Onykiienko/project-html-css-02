@@ -28,11 +28,15 @@
   height: 70px;
 }
 
+.footer-nav {
+  margin-bottom: 24px;
+}
+
 .footer-nav-list {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 24px;
+  
   list-style: none;
   padding: 0;
 }
