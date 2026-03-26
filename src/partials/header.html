@@ -1,7 +1,13 @@
 <header class="header-section" id="home">
   <div class="container header-container">
-    <a class="header-logo" href="./index.html">
-      <svg class="logo-img" width="142" height="60">
+    <a class="header-logo" href="./index.html" aria-label="Go to homepage">
+      <svg
+        class="logo-img"
+        width="142"
+        height="60"
+        aria-hidden="true"
+        focusable="false"
+      >
         <use href="/img/sprite.svg#logo"></use>
       </svg>
     </a>
@@ -31,8 +37,18 @@
     <div class="header-actions">
       <a href="#assorts" class="order-link">Order</a>
 
-      <button class="burger-btn js-open-menu" type="button">
-        <svg class="burger-icon" width="44" height="44">
+      <button
+        class="burger-btn js-open-menu"
+        type="button"
+        aria-label="Open menu"
+      >
+        <svg
+          class="burger-icon"
+          width="44"
+          height="44"
+          aria-hidden="true"
+          focusable="false"
+        >
           <use href="/img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
